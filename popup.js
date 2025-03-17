@@ -1,4 +1,4 @@
-const apiKey = "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";
+const apiKey = "yourApiKey"
 
 document.addEventListener("DOMContentLoaded", async () => {
     chrome.storage.local.get("selectedCode", (data) => {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         document.getElementById("output").innerText = "Loading...";
 
-        const response = await fetch("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", {
+        const response = await fetch(apiKey, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
